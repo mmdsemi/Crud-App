@@ -1,0 +1,26 @@
+<%- include('components/_header.ejs') %>
+
+
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex-justify-between">
+            <div class="filter">
+                <a href="/" class="text-gradient"><i class="fas fa-angle-double-left"></i>All Users</a>
+            </div>
+        </div>
+        <div class="form-title text-center">
+            <h2>New User</h2>
+            <span class="text-light">
+                Use The Below Form To Create Account
+            </span>
+        </div>
+
+        <!-- Form Start -->
+        <%- include('components/_formhandle.ejs')%>
+    </div>
+    <!-- Form end -->
+</main>
+
+
+
+<%- include('components/_footer.ejs') %>

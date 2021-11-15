@@ -1,0 +1,46 @@
+<%- include('components/_header.ejs') %>
+
+
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex-justify-between">
+            <a href="/add_user" class="box-shadow">
+                <span class="text-gradient">
+                    New User
+                    <i class="fas fa-user"></i>
+                </span>
+            </a>
+        </div>
+
+
+        <!-- Form Start -->
+        <form action="/" method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Gender</th>
+                        <th>Status</th>
+                        <th>Action</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <%- include('components/_show.ejs')
+                    %>
+
+                </tbody>
+
+            </table>
+
+        </form>
+    </div>
+    <!-- Form end -->
+</main>
+
+
+
+
+<%- include('components/_footer.ejs') %>
